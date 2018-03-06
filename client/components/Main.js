@@ -21,6 +21,6 @@ const Main = (props) => {
 }
 
 
-export default class Main
+export default Main
 
 

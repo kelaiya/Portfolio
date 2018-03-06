@@ -14,12 +14,12 @@ const postContact = contact => ({type: POST_CONTACT, contact})
 /**
  * THUNK CREATORS
  */
-export const auth = (name, email, message) =>
+export const fetchContact = (name, email, message) =>
   dispatch =>
     axios.post('/api/contact', {name, email, password })
       .then(res => {
         dispatch(postContact(res.data))
-      }
+      })
       .catch(err => console.log(err))
 
 /**

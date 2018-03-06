@@ -1,5 +1,7 @@
-const Contact = require('./contact')
 
-module.exports = {
-  Contact
-}
+const db = require('./db')
+
+// register models
+require('./models')
+
+module.exports = db
