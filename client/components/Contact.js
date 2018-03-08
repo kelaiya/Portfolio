@@ -5,8 +5,8 @@ import {fetchContact} from '../store'
 
 
 class Contact extends Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     this.state = {
       name : "",
       email: "",
@@ -22,50 +22,66 @@ class Contact extends Component {
     this.setState({
       name : event.target.value
     })
+    console.log("name", this.state.name)
   }
 
   handleChangeEmail(event){
     this.setState({
       email : event.target.value
     })
+    console.log("email", this.state.email)
   }
 
   handleChangeMessage(event){
     this.setState({
       message : event.target.value
     })
+    console.log("msg", this.state.message)
   }
 
   handleSubmit(event){
     event.preventDefault()
-    this.props.fetchContact(this.state.name, this.state.email, this.state.message)
+    console.log("submot")
+    this.props.fetchContact(this.state.name)
+  console.log("hi")
+  
   }
   render(){
   return (
       <div>
-                <form onSubmit={this.handleSubmit} className="data">
+                <form onSubmit={this.handleSubmit}>
                   <label> Name     :     
-                    <input type="text" onChange={this.handleChangeName} />
+                    <input onChange={this.handleChangeName} />
                   </label>
                   <label> Email     :     
-                    <input type="text" onChange={this.handleChangeEmail} />
+                    <input onChange={this.handleChangeEmail} />
                   </label>
                   <label> Message     :     
-                    <input type="text" onChange={this.handleChangeMessage} />
+                    <input onChange={this.handleChangeMessage} />
                   </label>
-                  <button type="submit"> Search </button>
+                  <button type="submit"> Submit </button>
                 </form>
               </div>
   )}
 }
+//  const mapStateToProps = function(state){
+//   // images is the value of state in store
+//   return {
+//     images : state.contact
+//   }
+
+// }
+
  const mapDispatchToProps = function(dispatch) {
+  console.log("hey")
   return {
-    fetchContact(name, email, message){
-      dispatch(fetchContact(name, email, message));
+    fetchContact(name){
+      console.log("dispatch", dispatch)
+      fetchContact(name);
     }
   }
 }
 
-export default Contact
+export default connect(null, mapDispatchToProps)(Contact)
 
 
