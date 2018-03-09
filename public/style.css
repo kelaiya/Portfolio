@@ -3,33 +3,35 @@ body {
 }
   
   .title{
-    font-family: fantasy;
-    background-image: url(background.jpg);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 130px;
-    color: wheat;
+    color: #80adad;
     margin: unset;
+    background-color: #feffff;
   }
 
   .nav {
     display: flex;
     align-items: center;
-    height: 15vh;
+    height: 10vh;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    background-color: #462c03;
-    font-family: unset;
+    background-color: #3d4546;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 25px;
   }
 
   .content{
-    background-image: url(bodyBack3.jpg);
+    /*background-image: url(bodyBack3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+*/   
+background-color: cream; 
   }
 
   .link{
@@ -43,7 +45,7 @@ body {
     margin-right: 100px;
     margin-top: 50px;
     border-radius: 4px;
-    height: 200px;
+    height: 400px;
     justify-content: center;
     align-items: center;
     width: calc(100% - 200px);
@@ -51,7 +53,7 @@ body {
 
   .text{
     margin: 30px;
-    /*color: #7d796f;*/
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: black;
     margin-left: 150px;
     margin-right: 150px;
@@ -60,21 +62,26 @@ body {
   .slogan{
     border-bottom: solid;
     width: calc(100% - 300px);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-color: #7dd0cf;
   }
 
   .skills{
     display: flex;
     justify-content: space-around;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
   }
 
   .subtitle{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     height: 80px;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: unset;
-    border-bottom: black solid;
+    border-bottom: solid;
+    border-color: #7dd0cf;
     margin-left: 150px;
     margin-right: 150px;
     width: calc(100% - 300px);
@@ -103,24 +110,24 @@ body {
     margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 25px;
-    height:25px;
+    height: 25px;
     justify-content: left;
-    border: 3px solid #020202;
+    border: 1px solid #020202;
     border-radius: 4px;
     width: 300px;
-    background-color: #e0d1d8
+    background-color: #ffffff;
 }
 .input1 {
     display: flex;
     margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 25px;
-    height:50px;
+    height: 80px;
     justify-content: left;
-    border: 3px solid #020202;
+    border: 1px solid #020202;
     border-radius: 4px;
     width: 300px;
-    background-color: #e0d1d8
+    background-color: #ffffff;
 }
 
   
@@ -134,7 +141,7 @@ body {
 
   .label1{
     display: flex;
-    margin-right: calc(100% - 38% - 150px);
+    margin-right: calc(100% - 36% - 150px);
     margin-top: 25px;
     justify-content: center;
   }
@@ -149,17 +156,18 @@ body {
     display: flex;
     justify-content: center;
     margin:25px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
   }
 
   .button:hover {
-    background-color: pink;
-    color: light pink;
+    background-color: grey;
+    color: light blue;
   }
 
   .logos{
     display: flex;
     height: 30px;
-    margin: 40px;
+    margin: 80px;
     flex-direction: row;
     justify-content: center;
     /* width: 33%; */
@@ -169,6 +177,7 @@ body {
   .icon{
     height: 30px;
     width: 30px;
+    margin: 15px;
   }
 
   .logo-img{

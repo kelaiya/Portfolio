@@ -62,7 +62,7 @@ export default class Projects extends Component{
 				        <div>
 				        	<h3 className="text"> Skye </h3>
 				        	<p className="text"><b> Description: </b>A mobile app that tracks your location, obtains accurate weather information, and then suggests    things to do based on the forecast. </p>
-									<p className="text"><b> Description: </b>Technologies used: React-Native, Stack Navigation </p>
+									<p className="text"><b> Technologies used: </b>React-Native, Stack Navigation, CSS </p>
 				        	<div className="video">
 				        		<YouTube videoId="iZTnL2dbpvU" />
 				        	</div>
