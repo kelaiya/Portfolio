@@ -79,11 +79,10 @@ body {
     margin-right: 100px;
     margin-top: 50px;
     border-radius: 4px;
-    width: 800px;
     height: 200px;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 90px);
+    width: calc(100% - 200px);
   }
 
   .text{
@@ -94,10 +93,8 @@ body {
   }
 
   .slogan{
-    margin: 30px;
-    color: #7d796f;
-    display: flex;
-    text-align: right;
+    border-bottom: dotted;
+    width: calc(100% - 300px);
   }
   .sortclass{
     border-radius: 4px;
