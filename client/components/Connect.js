@@ -54,28 +54,37 @@ export default class Connect extends Component {
   render(){
     return (
       <div>
+        <h1 className="title">Kelaiya Parikh</h1>
         <nav className = "nav">
-          <Link to="/home">Home</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact Me</Link>
+          <Link to="/home" className="link">Home</Link>
+          <Link to="/projects" className="link">Projects / Skills</Link>
+          <Link to="/contact" className="link">Contact Me</Link>
         </nav>
-        <h2> Connect me on : </h2>
-        <h3> Email: kelaiyarao1@gmail.com </h3>
-        <h3> LinkedIn: https://www.linkedin.com/in/kelaiya-parikh/ </h3>
-        <h3> Github: https://github.com/kelaiya </h3>
-        <h3> Facebook: https://www.facebook.com/kelaiyaa.rao </h3>
-        <form onSubmit={this.handleSubmit}>
-          <label> Name     :     
-            <input onChange={this.handleChangeName} />
-          </label>
-          <label> Email     :     
-            <input onChange={this.handleChangeEmail} />
-          </label>
-          <label> Message     :     
-            <input onChange={this.handleChangeMessage} />
-          </label>
-          <button type="submit"> Submit </button>
-        </form>
+        <div className="content">
+        <h2 className="subtitle"> Connect with me on : </h2>
+        <div className="form">
+          <form onSubmit={this.handleSubmit} className="form connect">
+            <label className="label"> Name     :    </label>
+            <input className="input" onChange={this.handleChangeName} />
+            <label className="label"> Email     :   </label>  
+            <input className="input" onChange={this.handleChangeEmail} />
+            <label className="label1"> Message     :     </label>
+            <input className="input1" onChange={this.handleChangeMessage} />
+            <button className="button" type="submit"> Submit </button>
+          </form>
+        </div>
+        <div className="logos">
+          <a className="icon" href="mailto:kelaiyarao1@gmail.com">
+            <img className="logo-img" src="/gmail.png" />
+          </a>
+          <a className="icon" href="https://www.linkedin.com/in/kelaiya-parikh">
+            <img className="logo-img" src="/linkedin.png" />
+          </a>
+          <a className="icon" href="https://github.com/kelaiya">
+            <img className="logo-img" src="/git.png" />
+          </a>
+        </div>
+        </div>
       </div>
   )}
 }
