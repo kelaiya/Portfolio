@@ -5,18 +5,22 @@ import history from '../history'
  * ACTION TYPES
  */
 const POST_CONTACT = 'POST_CONTACT'
+const WITE_CONTACT = 'WRITE_CONTACT'
 
 /**
  * ACTION CREATORS
  */
-const postContact = contact => ({type: POST_CONTACT, contact})
+function postContact(contact){
+  var action = {type: POST_CONTACT, contact}
+  return action
+} 
 
 /**
  * THUNK CREATORS
  */
-export function fetchContact(name){
+export function fetchContact(message){
   dispatch =>
-    axios.post('/api/contact', {"name":name })
+    axios.post('/api/contact/', {"message":message })
       .then(res => {
         console.log("inside")
         return dispatch(postContact(res.data))
@@ -31,7 +35,7 @@ export default function (state = [], action) {
   console.log("type", action)
   switch (action.type) {
     case POST_CONTACT:
-      return action.contact
+      return state.push(action.contact)
     default:
       return state
   }

@@ -8,7 +8,7 @@ export default class Projects extends Component{
     	console.log("hey")
 	    return (
 	           <div>
-		           <nav>
+		           <nav className = "nav">
 				        <Link to="/home">Home</Link>
 				        <Link to="/projects">Projects</Link>
 				        <Link to="/contact">Contact Me</Link>
