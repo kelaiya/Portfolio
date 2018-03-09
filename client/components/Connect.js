@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import {fetchContact} from '../store'
 import {withRouter, Link} from 'react-router-dom'
 import axios from 'axios'
 
@@ -45,11 +43,6 @@ export default class Connect extends Component {
         console.log("done")
       })
     console.log("after")
-
-  //   event.preventDefault()
-  //   // console.log("submot", this.props.fetchContact("hello"))
-  // this.props.postContact("hello")
-  // console.log("hi")
   }
   render(){
     return (
@@ -89,16 +82,6 @@ export default class Connect extends Component {
   )}
 }
 
-// const mapDispatchToProps = function(dispatch) {
-//   console.log("hey")
-//   return {
-//     postContact(message){
-//       // console.log("dispatch", typeof(dispatch()))
-//       dispatch(fetchContact(message));
-//     }
-//   }
-// }
 
-// export default connect(null, mapDispatchToProps)(Connect)
 
 
