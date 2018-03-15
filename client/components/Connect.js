@@ -63,7 +63,7 @@ export default class Connect extends Component {
             <input className="input" onChange={this.handleChangeEmail} />
             <label className="label1"> Message     :     </label>
             <input className="input1" onChange={this.handleChangeMessage} />
-            <button className="button" type="submit"> Submit </button>
+            <button className="button3" type="submit"> Submit </button>
           </form>
         </div>
         <div className="logos">

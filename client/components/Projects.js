@@ -52,20 +52,22 @@ export default class Projects extends Component{
 				     		</div>
 				     		<h2 className="subtitle"> Projects </h2>
 			        	<div>
-			        		<h3 className="text"> SimpleQL </h3>
+			        		<h2 className="text"> SimpleQL </h2>
 			        		<div className="code">
-			        			<a href="www.simpleql.tech"><button className="button2" type="submit"> WEBSITE </button></a>
-			        			<a href="https://github.com/kelaiya/ER2SQL"><button className="button" type="submit"> GITHUB </button></a>
+			        			<a href="http://www.simpleql.tech"><button className="button2" type="submit"> Website </button></a>
+			        			<a href="https://github.com/kelaiya/ER2SQL"><button className="button" type="submit"> GitHub </button></a>
 			        		</div>
 			        		<p className="text"><b> Description: </b>A web app which creates and stores databases on AWS RDS, visualizes it with schemas and gives SQL scripts downloadable to user’s local machine. It also takes data from users using CSV files and gives API endpoints to all the account holders. </p>
-									<p className="text"><b> Technologies used: </b>Javascript, React-Redux, AWS-RDS, Express, Sequelize </p>
+									<p className="text"><b> Technologies used: </b>Javascript, React-Redux, Node.js, AWS-RDS, Express, Sequelize </p>
  									<div className="video">
  										<YouTube videoId="0BrDHeQ5hxw" />
  									</div>
 				        </div>
 				        <div>
-				        	<h3 className="text"> Skye </h3>
-				        	<a href="https://github.com/kelaiya/MyProject"><button className="button2" type="submit"> GITHUB </button></a>
+				        	<h2 className="text"> Skye </h2>
+				        	<div className="code">
+				        		<a href="https://github.com/kelaiya/MyProject"><button className="button2" type="submit"> GitHub </button></a>
+				        	</div>
 				        	<p className="text"><b> Description: </b>A mobile app that tracks your location, obtains accurate weather information, and then suggests    things to do based on the forecast. </p>
 									<p className="text"><b> Technologies used: </b>React-Native, Stack Navigation, CSS </p>
 				        	<div className="video">
