@@ -97,6 +97,11 @@ background-color: cream;
     justify-content: center;
   }
 
+  .code{
+    display: flex;
+    flex-direction: row;
+  }
+
   .form{
     display: flex;
     flex-direction: column;
@@ -160,6 +165,24 @@ background-color: cream;
   }
 
   .button:hover {
+    background-color: grey;
+    color: light blue;
+  }
+
+  .button2{
+    height: 40px;
+    width: 80px;
+    color: #080808;
+    background-color: light pink;
+    font-size: 12px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin:25px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+
+  .button2:hover {
     background-color: grey;
     color: light blue;
   }
