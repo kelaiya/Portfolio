@@ -10,8 +10,8 @@ body {
     align-items: center;
     height: 130px;
     color: #80adad;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 20%;
+    margin-right: 20%;
     background-color: #feffff;
   }
 
@@ -41,32 +41,39 @@ background-color: cream;
     font-size: 20px;
   }
 
+  .link1{
+    text-decoration: none;
+    color: #b5a254;
+    font-size: 20px;
+    margin-left: 25px;
+  }
+
   .link2{
     text-decoration: none;
   }
   
   .image{
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 50px;
     border-radius: 4px;
-    height: 600px;
+    height: calc(66.66% - 20px);
     justify-content: center;
     align-items: center;
-    width: calc(100% - 160px);
+    width: calc(100% - 40%);
   }
 
   .text{
     margin: 30px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: black;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .slogan{
     border-bottom: solid;
-    width: calc(100% - 300px);
+    width: calc(100% - 20%);
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     border-color: #7dd0cf;
   }
@@ -89,6 +96,7 @@ background-color: cream;
     border-color: #7dd0cf;
     margin-left: 150px;
     margin-right: 150px;
+    margin-top: 35px;
     width: calc(100% - 300px);
   }
 
@@ -107,6 +115,8 @@ background-color: cream;
     flex-direction: row;
     margin-left: 150px;
   }
+
+
 
   .form{
     display: flex;
@@ -141,7 +151,9 @@ background-color: cream;
     background-color: #ffffff;
 }
 
-  
+  .under{
+    text-decoration: none;
+  }
 
   .label{
     display: flex;

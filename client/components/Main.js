@@ -9,12 +9,12 @@ const Main = (props) => {
       <h1 className="title">Kelaiya Parikh</h1>
       <nav className = "nav">
         <Link to="/home" className="link">Home</Link>
-        <Link to="/projects" className="link">  Projects / Skills</Link>
+        <Link to="/projects" className="link1">  Projects / Skills</Link>
         <Link to="/contact" className="link">Contact Me</Link>
       </nav>
       <div className="content">
         <div>
-          <img className="image" src="/IMG_0094.JPG" />
+          <img className="image" src="/IMG_2094.jpg" />
         </div>
         <h2 className="text slogan"> Motto of my life </h2>
         <p className="text"> The best preparation for tomorrow is doing your best today </p>

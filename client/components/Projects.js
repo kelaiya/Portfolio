@@ -13,7 +13,7 @@ export default class Projects extends Component{
 		          <h1 className="title">Kelaiya Parikh</h1>
 				      <nav className = "nav">
 				        <Link to="/home" className="link">Home</Link>
-				        <Link to="/projects" className="link">Projects / Skills</Link>
+				        <Link to="/projects" className="link1">Projects / Skills</Link>
 				        <Link to="/contact" className="link">Contact Me</Link>
 				      </nav>
 				    	<div className="content">
@@ -54,8 +54,8 @@ export default class Projects extends Component{
 			        	<div>
 			        		<h2 className="text"> SimpleQL </h2>
 			        		<div className="code">
-			        			<a href="http://www.simpleql.tech"><button className="button2" type="submit"> Website </button></a>
-			        			<a href="https://github.com/kelaiya/ER2SQL"><button className="button" type="submit"> GitHub </button></a>
+			        			<a href="http://www.simpleql.tech" className="under"><button className="button2" type="submit"> Website </button></a>
+			        			<a href="https://github.com/kelaiya/ER2SQL" className="under"><button className="button" type="submit"> GitHub </button></a>
 			        		</div>
 			        		<p className="text"><b> Description: </b>A web app which creates and stores databases on AWS RDS, visualizes it with schemas and gives SQL scripts downloadable to user’s local machine. It also takes data from users using CSV files and gives API endpoints to all the account holders. </p>
 									<p className="text"><b> Technologies used: </b>Javascript, React-Redux, Node.js, AWS-RDS, Express, Sequelize </p>
@@ -66,7 +66,7 @@ export default class Projects extends Component{
 				        <div>
 				        	<h2 className="text"> Skye </h2>
 				        	<div className="code">
-				        		<a href="https://github.com/kelaiya/MyProject"><button className="button2" type="submit"> GitHub </button></a>
+				        		<a href="https://github.com/kelaiya/MyProject" className="under"><button className="button2" type="submit"> GitHub </button></a>
 				        	</div>
 				        	<p className="text"><b> Description: </b>A mobile app that tracks your location, obtains accurate weather information, and then suggests    things to do based on the forecast. </p>
 									<p className="text"><b> Technologies used: </b>React-Native, Stack Navigation, CSS </p>
