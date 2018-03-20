@@ -20,8 +20,8 @@ const Main = (props) => {
         <p className="text"> The best preparation for tomorrow is doing your best today </p>
         <h2 className="text slogan"> About me... </h2>
         <p className="text"> I'm a former teacher who decided to change careers and learn web development. I have spent the better part of the last 2 years learning how to code and have passed certifications in Java. </p> 
-        <p className="text">In May 2017, I entered my dreamland the Grace Hopper Program by Fullstack Academy. It is an all women coding bootcamp. This is a place that changed my life. I learned all the cutting-edge technologies and now I am ready to apply these newfound skills to an engineering role.</p>
-        <p className="text"> What I love about coding is being able create something tangible out of an idea, and along the way being constantly challenged and forced to think creatively for a solution. I am extremely hard worker, who loves working in teams and learning new things. </p>
+        <p className="text">In May 2017, I took a big step toward my goals by enrolling into the Grace Hopper Program at Fullstack Academy, an coding academy exclusively for women. This place that changed my life. I learned cutting-edge technologies and now I am ready to apply these newfound skills to an engineering role.</p>
+        <p className="text"> What I love about coding is being able create something tangible out of an idea, and along the way being constantly challenged and forced to think creatively for a solution. I am an extremely hard worker, who loves working in teams and learning new things. </p>
         <h2 className="text slogan"> I love to do... </h2>
         <p className="text"> Sing. I gave several stage shows singing Bollywood songs </p>
         <p className="text"> Explore the world. I recently went to Japan and rejuvenate in its endless beauty </p>

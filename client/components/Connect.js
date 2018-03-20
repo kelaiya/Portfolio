@@ -6,7 +6,13 @@ export default class Connect extends Component {
   constructor(){
     super()
     this.state = {
-      message: ""
+      name: "",
+      email: "",
+      message: "",
+      greet: "",
+      warning1 : "",
+      warning2 : "",
+      warning3 : ""
     }
     this.handleChangeName = this.handleChangeName.bind(this)
     this.handleChangeEmail = this.handleChangeEmail.bind(this)
@@ -16,33 +22,52 @@ export default class Connect extends Component {
   
   handleChangeName(event){
     this.setState({
-      name : event.target.value
+      name : event.target.value,
+      warning1 : ""
     })
     console.log("name", this.state.name)
   }
 
   handleChangeEmail(event){
     this.setState({
-      email : event.target.value
+      email : event.target.value,
+      warning2 : ""
     })
     console.log("email", this.state.email)
   }
 
   handleChangeMessage(event){
     this.setState({
-      message : event.target.value
+      message : event.target.value,
+      warning3 : ""
     })
     console.log("msg", this.state.message)
   }
 
   handleSubmit(event){
     event.preventDefault()
-    console.log("before")
-    axios.post('/api/contact/', {"name": this.state.name, "email": this.state.email, "message": this.state.message })
-      .then(res => {
-        console.log("done")
+    if(this.state.name == ""){
+      this.setState({
+        warning1: "Please fill the field"
       })
-    console.log("after")
+    } else if (this.state.email == ""){
+      this.setState({
+        warning2: "Please fill the field"
+      })
+    } else if (this.state.message == ""){
+      this.setState({
+        warning3: "Please fill the field"
+      })
+    } else {
+      axios.post('/api/contact/', {"name": this.state.name, "email": this.state.email, "message": this.state.message })
+        .then(res => {
+          console.log("done")
+        })
+        document.getElementById("reset").reset();
+        this.setState({
+          greet: "Thanks for your message"
+        })
+      }
   }
   render(){
     return (
@@ -56,15 +81,27 @@ export default class Connect extends Component {
         <div className="content">
         <h2 className="subtitle"> Connect with me on : </h2>
         <div className="form">
-          <form onSubmit={this.handleSubmit} className="form connect">
+          <form id= "reset" onSubmit={this.handleSubmit} className="form connect">
             <label className="label"> Name     :    </label>
-            <input className="input" onChange={this.handleChangeName} />
+              <input className="input" onChange={this.handleChangeName} />
+              {
+                  this.state.warning1 && <p className="warning">Please fill the name section</p>
+              }
             <label className="label"> Email     :   </label>  
-            <input className="input" onChange={this.handleChangeEmail} />
+              <input className="input" onChange={this.handleChangeEmail} />
+              {
+                  this.state.warning2 && <p>Please fill email section</p>
+              }            
             <label className="label1"> Message     :     </label>
-            <input className="input1" onChange={this.handleChangeMessage} />
+              <input className="input1" onChange={this.handleChangeMessage} />
+              {
+                  this.state.warning3 && <p>Please fill message section</p>
+              }
             <button className="button3" type="submit"> Submit </button>
           </form>
+          {
+            this.state.greet && <h3>{this.state.greet}</h3>
+          }
         </div>
         <div className="logos">
           <a className="icon" href="mailto:kelaiyarao1@gmail.com">
