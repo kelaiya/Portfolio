@@ -24,7 +24,7 @@ const Main = (props) => {
         <p className="text"> What I love about coding is being able create something tangible out of an idea, and along the way being constantly challenged and forced to think creatively for a solution. I am an extremely hard worker, who loves working in teams and learning new things. </p>
         <h2 className="text slogan"> I love to do... </h2>
         <p className="text"> Sing. I gave several stage shows singing Bollywood songs </p>
-        <p className="text"> Explore the world. I recently went to Japan and rejuvenate in its endless beauty </p>
+        <p className="text"> Explore the world. I recently went to Japan. I was delighted with artistic originality, effortless elegance and its endless beauty </p>
         <p className="text"> Ofcourse, to code. I love because it is a usable art. </p>
         <div className="logos">
           <a className="icon" href="mailto:kelaiyarao1@gmail.com" target="_blank">
