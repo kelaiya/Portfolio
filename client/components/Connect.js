@@ -79,7 +79,7 @@ export default class Connect extends Component {
           <Link to="/contact" className="link">Contact Me</Link>
         </nav>
         <div className="content">
-        <h2 className="subtitle"> Connect with me on : </h2>
+        <h2 className="subtitle"> Connect with me :  </h2>
         <div className="form">
           <form id= "reset" onSubmit={this.handleSubmit} className="form connect">
             <label className="label"> Name     :    </label>
@@ -102,15 +102,17 @@ export default class Connect extends Component {
           {
             this.state.greet && <h3>{this.state.greet}</h3>
           }
+          <button className="button4"><a href="https://drive.google.com/file/d/1yJZxLUbP-3LM15COgIV_6xm_9esFQpWR/view?usp=sharing" target="_blank" className="link2"> View my resume </a></button>
         </div>
+
         <div className="logos">
-          <a className="icon" href="mailto:kelaiyarao1@gmail.com">
+          <a className="icon" href="mailto:kelaiyarao1@gmail.com" target="_blank">
             <img className="logo-img" src="/gmail.png" />
           </a>
-          <a className="icon" href="https://www.linkedin.com/in/kelaiya-parikh">
+          <a className="icon" href="https://www.linkedin.com/in/kelaiya-parikh" target="_blank">
             <img className="logo-img" src="/linkedin.png" />
           </a>
-          <a className="icon" href="https://github.com/kelaiya">
+          <a className="icon" href="https://github.com/kelaiya" target="_blank">
             <img className="logo-img" src="/git.png" />
           </a>
         </div>

@@ -75,13 +75,13 @@ export default class Projects extends Component{
 				        	</div>
 				        </div>
 				        <div className="logos">
-				          <a className="icon" href="mailto:kelaiyarao1@gmail.com">
+				          <a className="icon" href="mailto:kelaiyarao1@gmail.com" target="_blank">
 				            <img className="logo-img" src="/gmail.png" />
 				          </a>
-				          <a className="icon" href="https://www.linkedin.com/in/kelaiya-parikh">
+				          <a className="icon" href="https://www.linkedin.com/in/kelaiya-parikh" target="_blank">
 				            <img className="logo-img" src="/linkedin.png" />
 				          </a>
-				          <a className="icon" href="https://github.com/kelaiya">
+				          <a className="icon" href="https://github.com/kelaiya" target="_blank">
 				            <img className="logo-img" src="/git.png" />
 				          </a>
 				        </div> 

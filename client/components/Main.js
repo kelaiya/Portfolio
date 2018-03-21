@@ -27,13 +27,13 @@ const Main = (props) => {
         <p className="text"> Explore the world. I recently went to Japan and rejuvenate in its endless beauty </p>
         <p className="text"> Ofcourse, to code. I love because it is a usable art. </p>
         <div className="logos">
-          <a className="icon" href="mailto:kelaiyarao1@gmail.com">
+          <a className="icon" href="mailto:kelaiyarao1@gmail.com" target="_blank">
             <img className="logo-img" src="/gmail.png" />
           </a>
-          <a className="icon" href="https://www.linkedin.com/in/kelaiya-parikh">
+          <a className="icon" href="https://www.linkedin.com/in/kelaiya-parikh" target="_blank">
             <img className="logo-img" src="/linkedin.png" />
           </a>
-          <a className="icon" href="https://github.com/kelaiya">
+          <a className="icon" href="https://github.com/kelaiya" target="_blank">
             <img className="logo-img" src="/git.png" />
           </a>
         </div>

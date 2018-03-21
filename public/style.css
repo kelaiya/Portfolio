@@ -4,7 +4,7 @@ body {
   
   .title{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +52,7 @@ background-color: cream;
 
   .link2{
     text-decoration: none;
+    color: black;
   }
   
   .image{
@@ -118,18 +119,15 @@ background-color: cream;
     margin-left: 150px;
   }
 
-
-
   .form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* width: 33%; */
     align-items: center;
   }
 
   .input {
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     margin-left: 150px;
     margin-right: 150px;
@@ -140,9 +138,10 @@ background-color: cream;
     border-radius: 4px;
     width: 300px;
     background-color: #ffffff;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .input1 {
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     margin-left: 150px;
     margin-right: 150px;
@@ -153,6 +152,7 @@ background-color: cream;
     border-radius: 4px;
     width: 300px;
     background-color: #ffffff;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
   .under{
@@ -164,6 +164,7 @@ background-color: cream;
     margin-right: calc(100% - 33% - 150px);
     margin-top: 25px;
     justify-content: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
   }
 
   .label1{
@@ -171,12 +172,13 @@ background-color: cream;
     margin-right: calc(100% - 36% - 150px);
     margin-top: 25px;
     justify-content: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
   }
 
   .button{
     height: 40px;
     width: 80px;
-    color: #080808;
+    color: #000000;
     background-color: light pink;
     font-size: 14px;
     border-radius: 4px;
@@ -195,7 +197,7 @@ background-color: cream;
   .button2{
     height: 40px;
     width: 80px;
-    color: #080808;
+    color: #000000;
     background-color: light pink;
     font-size: 14px;
     border-radius: 4px;
@@ -213,7 +215,7 @@ background-color: cream;
   .button3{
     height: 40px;
     width: 80px;
-    color: #080808;
+    color: #000000;
     background-color: light pink;
     font-size: 14px;
     border-radius: 4px;
@@ -228,6 +230,26 @@ background-color: cream;
   .button3:hover {
     background-color: grey;
     color: light blue;
+  }
+
+  .button4{
+    height: 40px;
+    width: 180px;
+    color: #000000;
+    background-color: light pink;
+    font-size: 14px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px; 
+    margin-top: 30px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  .button4:hover {
+    background-color: #d7f1f7;
   }
 
   .logos{
@@ -255,4 +277,16 @@ background-color: cream;
   .warning{
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  @media screen and (max-width:959px){
+    .title{
+      width: 100%;
+      margin: 0;
+      font-size: 50px;
+    }
+
+    .code{
+      align-items: left;
+    }
   }
