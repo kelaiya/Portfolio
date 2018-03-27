@@ -12,7 +12,7 @@ export default class Projects extends Component{
     	var other = ["Mocha", "Chai", "Git", "Webpack"];
 	   //<iframe width="560" height="315" src="https://www.youtube.com/embed/iZTnL2dbpvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	    return (
-	       <div>
+	      <div>
 	        <Navbar />
 		    	<div className="content">
 		    		<h2 className="subtitle"> Skills </h2> 

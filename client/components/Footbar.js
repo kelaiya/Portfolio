@@ -16,7 +16,7 @@ const Footbar = () => {
         </a>
       </div>
     </div>
-	  )
+	)
 }
 
 export default Footbar;
