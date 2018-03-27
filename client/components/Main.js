@@ -1,17 +1,13 @@
 import React from 'react'
 import {withRouter, Link} from 'react-router-dom'
-
+import Navbar from './Navbar'
+import Footbar from './Footbar'
 
 const Main = (props) => {
   var skills = []
   return (
     <div>
-      <h1 className="title">Kelaiya Parikh</h1>
-      <nav className = "nav">
-        <Link to="/home" className="link">Home</Link>
-        <Link to="/projects" className="link1">  Projects / Skills</Link>
-        <Link to="/contact" className="link">Contact Me</Link>
-      </nav>
+      <Navbar />
       <div className="content">
         <div>
           <img className="image" src="/IMG_2094.jpg" />
@@ -26,17 +22,7 @@ const Main = (props) => {
         <p className="text"> Sing. I gave several stage shows singing Bollywood songs </p>
         <p className="text"> Explore the world. I recently went to Japan. I was delighted with artistic originality, effortless elegance and its endless beauty </p>
         <p className="text"> Ofcourse, to code. I love because it is a usable art. </p>
-        <div className="logos">
-          <a className="icon" href="mailto:kelaiyarao1@gmail.com" target="_blank">
-            <img className="logo-img" src="/gmail.png" />
-          </a>
-          <a className="icon" href="https://www.linkedin.com/in/kelaiya-parikh" target="_blank">
-            <img className="logo-img" src="/linkedin.png" />
-          </a>
-          <a className="icon" href="https://github.com/kelaiya" target="_blank">
-            <img className="logo-img" src="/git.png" />
-          </a>
-        </div>
+        <Footbar />
        </div>    
     </div>
   )

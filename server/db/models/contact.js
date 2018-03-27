@@ -7,7 +7,10 @@ const Contact = db.define('contact', {
     type: Sequelize.STRING
   },
   email: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
+    validate:{
+    	isEmail:true
+    }
   },
   message: {
     type: Sequelize.TEXT

@@ -1,21 +1,19 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import YouTube from 'react-youtube';
+import Navbar from './Navbar'
+import Footbar from './Footbar'
 
 export default class Projects extends Component{
     
     render(){
     	var frontend = ["React", "Redux", "Javascript", "jQuery", "AJAX", "HTML5", "CSS5", "FlexBox"];
     	var backend = ["Node.js", "Sequelize", "SQL", "Express", "Java", "Ruby"];
-    	var other = ["Mocha", "Chai", "Git", "Webpack"]
+    	var other = ["Mocha", "Chai", "Git", "Webpack"];
+	   //<iframe width="560" height="315" src="https://www.youtube.com/embed/iZTnL2dbpvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	    return (
 	           <div>
-		          <h1 className="title">Kelaiya Parikh</h1>
-				      <nav className = "nav">
-				        <Link to="/home" className="link">Home</Link>
-				        <Link to="/projects" className="link1">Projects / Skills</Link>
-				        <Link to="/contact" className="link">Contact Me</Link>
-				      </nav>
+		          <Navbar />
 				    	<div className="content">
 				    		<h2 className="subtitle"> Skills </h2> 
       					<div className="skills">
@@ -59,10 +57,13 @@ export default class Projects extends Component{
 			        		</div>
 			        		<p className="text"><b> Description: </b>A web app which creates and stores databases on AWS RDS, visualizes it with schemas and gives SQL scripts downloadable to user’s local machine. It also takes data from users using CSV files and gives API endpoints to all the account holders. </p>
 									<p className="text"><b> Technologies used: </b>Javascript, React-Redux, Node.js, AWS-RDS, Express, Sequelize </p>
- 									<div className="video">
- 										<YouTube videoId="0BrDHeQ5hxw" />
- 									</div>
+ 									<div className="video-wrapper">
+	 									<div className="video">
+	 										<YouTube videoId="0BrDHeQ5hxw" />
+	 									</div>
+				        	</div>
 				        </div>
+				        <hr className="divider" />
 				        <div>
 				        	<h2 className="text"> Skye </h2>
 				        	<div className="code">
@@ -70,21 +71,13 @@ export default class Projects extends Component{
 				        	</div>
 				        	<p className="text"><b> Description: </b>A mobile app that tracks your location, obtains accurate weather information, and then suggests    things to do based on the forecast. </p>
 									<p className="text"><b> Technologies used: </b>React-Native, Stack Navigation, CSS </p>
-				        	<div className="video">
-				        		<YouTube videoId="iZTnL2dbpvU" />
+				        	<div className="video-wrapper">
+					        	<div className="video">
+					        		<YouTube videoId="iZTnL2dbpvU" />
+					        	</div>
 				        	</div>
 				        </div>
-				        <div className="logos">
-				          <a className="icon" href="mailto:kelaiyarao1@gmail.com" target="_blank">
-				            <img className="logo-img" src="/gmail.png" />
-				          </a>
-				          <a className="icon" href="https://www.linkedin.com/in/kelaiya-parikh" target="_blank">
-				            <img className="logo-img" src="/linkedin.png" />
-				          </a>
-				          <a className="icon" href="https://github.com/kelaiya" target="_blank">
-				            <img className="logo-img" src="/git.png" />
-				          </a>
-				        </div> 
+				        <Footbar /> 
 			      	</div>
 			     </div>
 	    )
