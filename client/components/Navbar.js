@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
-import {withRouter, Link} from 'react-router-dom'
+import React, {Component} from 'react';
+import {withRouter, Link} from 'react-router-dom';
 
-export default function Navbar () {
+const Navbar = () => {
 	return(
 				<div>
 		      <h1 className="title">Kelaiya Parikh</h1>
@@ -13,3 +13,5 @@ export default function Navbar () {
 	      </div>
 	  )
 }
+
+export default Navbar;

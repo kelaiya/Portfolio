@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
-import {withRouter, Link} from 'react-router-dom'
+import React, {Component} from 'react';
+import {withRouter, Link} from 'react-router-dom';
 
-export default function Footbar () {
+const Footbar = () => {
 	return(
 				<div>
 		      <div className="logos">
@@ -18,3 +18,5 @@ export default function Footbar () {
 	      </div>
 	  )
 }
+
+export default Footbar;

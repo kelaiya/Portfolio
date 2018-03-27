@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
-import {withRouter, Link} from 'react-router-dom'
-import axios from 'axios'
-import Navbar from './Navbar'
-import Footbar from './Footbar'
+import React, {Component} from 'react';
+import {withRouter, Link} from 'react-router-dom';
+import axios from 'axios';
+import Navbar from './Navbar';
+import Footbar from './Footbar';
 
 export default class Connect extends Component {
   constructor(){
