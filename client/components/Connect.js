@@ -92,7 +92,7 @@ export default class Connect extends Component {
               <label className="label"> Name     :    </label>
                 <input className="input" onChange={this.handleChangeName} />
                 {
-                    this.state.warning1 && <p className="warning">Name should notbe empty</p>
+                    this.state.warning1 && <p className="warning">Name should not be empty</p>
                 }
               <label className="label"> Email     :   </label>  
                 <input className="input" onChange={this.handleChangeEmail} />
@@ -100,7 +100,7 @@ export default class Connect extends Component {
                     this.state.warning2 && <p className="warning">Email should not be empty</p>
                 }  
                 {
-                    this.state.isemail && <p className="warning">Please give proper email id</p>
+                    this.state.isemail && <p className="warning">Invalid email id</p>
                 }          
               <label className="label1"> Message     :     </label>
                 <textarea className="input1" onChange={this.handleChangeMessage} />

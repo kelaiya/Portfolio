@@ -7,9 +7,9 @@ import Footbar from './Footbar';
 export default class Projects extends Component{
     
     render(){
-    	var frontend = ["React", "Redux", "Javascript", "jQuery", "AJAX", "HTML5", "CSS5", "FlexBox"];
-    	var backend = ["Node.js", "Sequelize", "SQL", "Express", "Java", "Ruby"];
-    	var other = ["Mocha", "Chai", "Git", "Webpack"];
+    	var frontend = ["React", "Redux", "React-Native", "Javascript(ES6)", "jQuery", "AJAX", "HTML5", "CSS5", "Flexbox"];
+    	var backend = ["Node.js", "Sequelize", "SQL", "Express.js", "Java", "Ruby"];
+    	var other = ["Mocha", "Chai", "Git", "Webpack", "Postman", "Command Line", "Xcode"];
 	   //<iframe width="560" height="315" src="https://www.youtube.com/embed/iZTnL2dbpvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	    return (
 	      <div>
