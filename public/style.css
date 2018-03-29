@@ -24,7 +24,7 @@ body {
   .nav {
     display: flex;
     align-items: center;
-    height: 12vh;
+    height: 60px;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
@@ -301,6 +301,7 @@ background-color: cream;
     margin-left: 150px;
     margin-right: 150px;
     align-items: center;
+    margin-bottom: 50px;
   }
 
   .icon{
