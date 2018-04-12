@@ -57,10 +57,15 @@ export default class Projects extends Component{
 	        		</div>
 	        		<p className="text"><b> Description: </b>A web app which creates and stores databases on AWS RDS, visualizes it with schemas and gives SQL scripts downloadable to user’s local machine. It also takes data from users using CSV files and gives API endpoints to all the account holders. </p>
 							<p className="text"><b> Technologies used: </b>Javascript, React-Redux, Node.js, AWS-RDS, Express, Sequelize </p>
-								<div className="video-wrapper">
-									<div className="video">
-										<YouTube videoId="0BrDHeQ5hxw" />
-									</div>
+							<div className="pic1">
+								<img src="/first.png" className="sample1" />
+								<img src="/third.png" className="sample1" />
+							</div>
+							<p className="videoTitle"> Check out the video </p>
+							<div className="video-wrapper">
+								<div className="video">
+									<YouTube videoId="0BrDHeQ5hxw" />
+								</div>
 		        	</div>
 		        </div>
 		        <hr className="divider" />
@@ -71,6 +76,12 @@ export default class Projects extends Component{
 		        	</div>
 		        	<p className="text"><b> Description: </b>A mobile app that tracks your location, obtains accurate weather information, and then suggests    things to do based on the forecast. </p>
 							<p className="text"><b> Technologies used: </b>React-Native, Stack Navigation, CSS </p>
+		        	<div className="pic2">
+								<img src="/1.png" className="sample2" />
+								<img src="/2.png" className="sample2" />
+								<img src="/3.png" className="sample2" />
+							</div>
+		        	<p className="videoTitle"> Check out the video </p>
 		        	<div className="video-wrapper">
 			        	<div className="video">
 			        		<YouTube videoId="iZTnL2dbpvU" />
