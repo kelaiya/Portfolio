@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
-const db = require('./db')
+// const db = require('./db')
 const PORT = process.env.PORT || 8080
 const app = express()
 module.exports = app
@@ -54,10 +54,9 @@ const startListening = () => {
   const server = app.listen(PORT, () => console.log(`Mixing it up on port ${PORT}`))
 }
 
-const syncDb = () => db.sync()
+// const syncDb = () => db.sync()
 
 if (require.main === module) {
-    syncDb()
     createApp()
     startListening()
 } else {
