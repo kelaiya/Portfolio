@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "http://kelaiya.github.io/portfolio",
   "engines": {
     "node": ">= 7.0.0"
   },
@@ -8,13 +9,12 @@
   "scripts": {
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
-    "predeploy" : "npm run build-client",
-    "deploy": "git checkout -b deploy && webpack -p && git add -f public/bundle.js public/bundle.js.map && git commit --allow-empty -m 'Deploying' && git push --force heroku deploy:master && git checkout master && git branch -D deploy",
+    "predeploy": "npm run build-client",
+    "deploy" : "gh-pages -d build",
     "lint": "eslint ./ --ignore-path .gitignore",
     "start": "node server",
     "start-dev": "NODE_ENV='development' npm run build-client-watch & npm run start-server",
     "start-server": "nodemon server -e html,js,scss --ignore public --ignore client",
-    "homepage": "http://kelaiya.github.io/portfolio",
     "test": "NODE_ENV='test' mocha ./server/**/*.spec.js ./server/**/**/*.spec.js ./client/**/*.spec.js --require @babel/polyfill --require @babel/register"
   },
   "dependencies": {
@@ -47,6 +47,7 @@
     "eslint": "^4.10.0",
     "eslint-config-fullstack": "^3.0.0",
     "eslint-plugin-react": "^7.4.0",
+    "gh-pages": "^5.0.0",
     "nodemon": "^1.12.1",
     "react-test-renderer": "^16.0.0",
     "supertest": "^3.0.0",
