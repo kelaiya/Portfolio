@@ -112,7 +112,7 @@ export default class Connect extends Component {
             {
               this.state.greet && <h3>{this.state.greet}</h3>
             }
-            <button className="button4"><a href="https://drive.google.com/open?id=1IuUUXJgfUSsbx0QYvBU_ICmgbXbhydV1" target="_blank" className="link2"> View my resume </a></button>
+            
           </div>
           <Footbar />
         </div>
