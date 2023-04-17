@@ -10,7 +10,7 @@
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
     "predeploy": "npm run build-client",
-    "deploy" : "gh-pages -d build",
+    "deploy" : "gh-pages -d server",
     "lint": "eslint ./ --ignore-path .gitignore",
     "start": "node server",
     "start-dev": "NODE_ENV='development' npm run build-client-watch & npm run start-server",
