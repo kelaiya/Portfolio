@@ -380,9 +380,9 @@ var Main = function Main() {
     className: "text"
   }, "In mid-2017, I took a big step towards my goals by enrolling into the Grace Hopper Program at Fullstack Academy, a coding academy exclusively for women. This experience changed my life. I learned cutting-edge technologies in software development like Javascript, Node.js, React and Redux."), _react.default.createElement("p", {
     className: "text"
-  }, "In 2018, I started working as a Software Engineer at Watermark Insights, an Edtech company. I worked on developing applications using Elixir with Phoenix framework and Elm in frontend. I also researched and designed multiple applications\u2019 login/logout process with AUTH0 Single sign-on authentication using, the Auth0\u2019s implicit and the code flow. Also collaborated with team members to setup the Redis server for storing data."), _react.default.createElement("p", {
+  }, "In 2018, I started working as a Software Engineer at Watermark Insights, an Edtech company. I worked on developing applications using Elixir with Phoenix framework and Elm in frontend. I also researched and designed multiple applications\u2019 login/logout process with AUTH0 Single Sign-On authentication using, the Auth0\u2019s implicit and the code flow. Also collaborated with team members to setup the Redis server for storing data."), _react.default.createElement("p", {
     className: "text"
-  }, " What I love about coding is being able to create something tangible out of an idea, and along the way being constantly challenged to creatively to find a solution. I am an incredibly hard worker, who loves colloborating and learning new things. "), _react.default.createElement("p", {
+  }, " I am a Senior Developer now and will continue to endevour my goals in the software world. What I love about coding is being able to create something tangible out of an idea, and along the way being constantly challenged to creatively to find a solution. I am an incredibly hard worker, who loves colloborating and learning new things. "), _react.default.createElement("p", {
     className: "text"
   }, " Besides coding I love to sing and explore the world. "), _react.default.createElement(_Footbar.default, null)));
 };
