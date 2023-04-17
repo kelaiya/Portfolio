@@ -226,6 +226,7 @@ background-color: cream;
      margin-left: 25px; 
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     text-decoration: none;
+    align-items: center
   }
 
   .button:hover {
@@ -244,6 +245,7 @@ background-color: cream;
     justify-content: center;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     text-decoration: none;
+    align-items: center
   }
 
   .button2:hover {

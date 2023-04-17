@@ -529,16 +529,10 @@ function (_Component) {
       }, " SimpleQL "), _react.default.createElement("div", {
         className: "code"
       }, _react.default.createElement("a", {
-        href: "http://www.simpleql.tech",
-        className: "under"
-      }, _react.default.createElement("button", {
-        className: "button2",
-        type: "submit"
-      }, " Website ")), _react.default.createElement("a", {
         href: "https://github.com/kelaiya/ER2SQL",
         className: "under"
       }, _react.default.createElement("button", {
-        className: "button",
+        className: "button2",
         type: "submit"
       }, " GitHub "))), _react.default.createElement("p", {
         className: "text"
